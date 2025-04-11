@@ -25,15 +25,14 @@ const Counter = () => {
       <div className="btnContainter">
         <div className="incrementText">
           <button onClick={increment} className="counterBtn">
-            +
+            Increase
           </button>
         </div>
         <div className="incrementText">
           <button onClick={decrement} className="counterBtn">
-            -
+            Decrease
           </button>
         </div>
-        
       </div>
       {error && <p className="counterError">{error}</p>}
     </div>
