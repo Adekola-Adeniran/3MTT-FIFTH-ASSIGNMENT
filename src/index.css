@@ -1,61 +1,50 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+*{
+  box-sizing: border-box;
   margin: 0;
   top: 0;
-  background-color: #f4f4f4;
-  font-family: 'Times New Roman', Times, serif;
+  padding:0;
+}
+body{
+  font-family: "Roboto", sans-serif;
+  
 }
 
-.counter {
-  text-align: center;
-  background: #fff;
-  padding: 50px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.counter h1 {
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.counterError {
-  color: red;
-  border: 1px solid red;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 5px;
-  box-shadow: 0 0 0 rgb(0, 0, 0.1);
-  font-weight: 400;
-  margin-top: 20px;
-}
-
-.counterValue {
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.btnContainter {
+.navbar{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
-  gap: 10px;
-  margin: 5px;
+  padding: 20px 50px;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+}
+.navbar div{
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+.navbar a{
+  text-decoration: none;
+  color: #000;
+}
+.nav-btn{
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+.nav-btn a:hover{
+  border-bottom: 2px solid #333;
+  color: #333;
 }
 
-.incrementText button {
-  align-items: center;
-  background-color: #000;
-  color: white;
-  box-shadow: 0 5px rgb(0, 0, 0.1);
-  outline: none;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 18px;
-  padding: 10px;
+.body-container{
+  display: flex;
+  flex-direction: row;
+}
+.heroBg{
+  
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
 }
