@@ -7,7 +7,7 @@ import useFetch from "./useFetch";
 
 function App() {
   const { loading, error, data } = useFetch(
-    "https://jsonplaceholder.typicode.com/posts"
+    "https://dev.to/api/articles"
   );
   console.log({ data });
   return (
